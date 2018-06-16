@@ -1,0 +1,15 @@
+#peer2
+server:
+  port: 8002
+profiles: peer2
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service-url:
+      peer1: http://peer1:8001/eureka/
+      peer3: http://peer3:8003/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+instance:
+    hostname: peer2
