@@ -1,17 +1,11 @@
-{
-    "name": "neo-config",
-    "profiles": [
-        "dev"
-    ],
-    "label": null,
-    "version": null,
-    "state": null,
-    "propertySources": [
-        {
-            "name": "https://github.com/jixu90hou/weweb-cloud/weweb-config-rep/swf-config-dev.properties",
-            "source": {
-                "neo.hello": "hello im dev"
-            }
-        }
-    ]
-}
+spring:
+  application:
+    name: weweb-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jixu90hou/weweb-cloud # 配置git仓库的地址
+          search-paths: weweb-config-repo # git仓库地址下的相对地址，可以配置多个，用,分割。
+server:
+  port: 12000
