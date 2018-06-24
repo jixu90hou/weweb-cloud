@@ -1,0 +1,17 @@
+{
+    "name": "neo-config",
+    "profiles": [
+        "dev"
+    ],
+    "label": null,
+    "version": null,
+    "state": null,
+    "propertySources": [
+        {
+            "name": "https://github.com/jixu90hou/weweb-cloud/weweb-config-rep/swf-config-dev.properties",
+            "source": {
+                "neo.hello": "hello im dev"
+            }
+        }
+    ]
+}
