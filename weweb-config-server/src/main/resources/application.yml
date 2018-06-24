@@ -7,5 +7,7 @@ spring:
         git:
           uri: https://github.com/jixu90hou/weweb-cloud # 配置git仓库的地址
           search-paths: weweb-config-repo # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username: jixu90hou
+          password: 0123151992q
 server:
   port: 12000

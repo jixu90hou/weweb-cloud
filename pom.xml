@@ -13,7 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Finchley.BUILD-SNAPSHOT</spring-cloud.version>
+        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -35,6 +35,10 @@
 
 <!--
    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -116,7 +120,6 @@
         <module>weweb-consumer-hystrix</module>
         <module>weweb-hystrix-dashboard-turbine</module>
         <module>weweb-config-server</module>
-        <module>weweb-config-client</module>
     </modules>
 
 
